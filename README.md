@@ -1,16 +1,36 @@
-# linkit
+# LinkIT
 
-A new Flutter project.
+Your personalized social cards. Put your social medias link in one place. Easy peasy!
 
-## Getting Started
+<p align="center">
+  <img src="screenshots/laptop.png" />
+</p>
 
-This project is a starting point for a Flutter application.
+## Demo
 
-A few resources to get you started if this is your first Flutter project:
+Web : https://social.devadnani.com/
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+
+- Login / Sign Up
+
+## Libraries
+
+- Main Library Used in App     
+    - Provider
+    - Shared Preferences
+    - Url Strategy
+
+## Screenshots
+
+- All Screens 
+
+Screen 1               |  Screen 2  | Screen 3                            
+:-------------------------:|:-------------------------:|:-------------------------:
+![](screenshots/mobile.png)|![](screenshots/lapmob.png)|![](screenshots/laptop.png)
+
+## Feedback
+
+If you have any feedback, please reach out to us at dev.adnani26@gmail.com
+
