@@ -1,6 +1,6 @@
 # LinkIT
 
-Your personalized social cards. Put your social medias link in one place. Easy peasy!
+- Your personalized social cards. Put your social medias link in one place. Easy peasy!
 
 <p align="center">
   <img src="screenshots/laptop.png" />
