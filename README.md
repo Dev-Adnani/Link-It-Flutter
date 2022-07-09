@@ -10,6 +10,11 @@ Your personalized social cards. Put your social medias link in one place. Easy p
 
 Web : https://social.devadnani.com/
 
+## Note
+
+- Wanna Change It To Your Link?
+  - For Adding Your Links & Profile Image
+  - Navigate To -> Lib Folder -> App Folder -> Constants Folder -> app.social.links.dart -> Change Links Over There
 
 ## Features
 
