@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:linkit/app/constants/app.colors.dart';
-import 'package:linkit/profileScreen/widgets/icon.style.dart';
+import 'package:linkit/presentation/profileScreen/widgets/icon.style.dart';
 
 class SettingsItem extends StatelessWidget {
   final String icons;

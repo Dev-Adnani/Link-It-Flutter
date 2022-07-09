@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:linkit/app/constants/app.theme.dart';
 import 'package:linkit/app/provider/app.provider.dart';
 import 'package:linkit/core/notifiers/theme.notifier.dart';
-import 'package:linkit/profileScreen/profile.screen.dart';
+import 'package:linkit/presentation/profileScreen/profile.screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {

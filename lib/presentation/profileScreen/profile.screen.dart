@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:linkit/app/constants/app.assets.dart';
 import 'package:linkit/app/constants/app.colors.dart';
+import 'package:linkit/app/constants/app.social.links.dart';
 import 'package:linkit/core/notifiers/theme.notifier.dart';
-import 'package:linkit/profileScreen/widgets/icon.style.dart';
-import 'package:linkit/profileScreen/widgets/profile.item.dart';
-import 'package:linkit/profileScreen/widgets/profile.user.card.dart';
+import 'package:linkit/presentation/profileScreen/widgets/icon.style.dart';
+import 'package:linkit/presentation/profileScreen/widgets/profile.item.dart';
+import 'package:linkit/presentation/profileScreen/widgets/profile.user.card.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -21,13 +22,12 @@ class ProfileScreen extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 20,
+              height: 60,
             ),
             ProfileUserCard(
               cardColor: AppColors.rawSienna,
               userName: 'Dev Adnani',
-              userProfileUrl:
-                  'https://avatars.githubusercontent.com/u/61565182?v=4',
+              userProfileUrl: AppSocialLinks.profileUrl,
               onTap: () {},
             ),
             const SizedBox(
@@ -69,8 +69,7 @@ class ProfileScreen extends StatelessWidget {
               icons: AppAssets.linkedin,
               themeFlag: themeFlag,
               onTap: () async {
-                final Uri url =
-                    Uri.parse('https://www.linkedin.com/in/dev-adnani/');
+                final Uri url = Uri.parse(AppSocialLinks.linkedin);
                 await launchUrl(url);
               },
               iconStyle: IconStyle(
@@ -82,8 +81,7 @@ class ProfileScreen extends StatelessWidget {
             SettingsItem(
               themeFlag: themeFlag,
               onTap: () async {
-                final Uri url =
-                    Uri.parse('https://www.youtube.com/c/DevAdnani');
+                final Uri url = Uri.parse(AppSocialLinks.youtube);
                 await launchUrl(url);
               },
               icons: AppAssets.youtube,
@@ -98,7 +96,7 @@ class ProfileScreen extends StatelessWidget {
               icons: AppAssets.twitter,
               themeFlag: themeFlag,
               onTap: () async {
-                final Uri url = Uri.parse('https://twitter.com/AdnaniDev');
+                final Uri url = Uri.parse(AppSocialLinks.twitter);
                 await launchUrl(url);
               },
               iconStyle: IconStyle(
@@ -110,8 +108,7 @@ class ProfileScreen extends StatelessWidget {
             SettingsItem(
               themeFlag: themeFlag,
               onTap: () async {
-                final Uri url =
-                    Uri.parse('https://www.instagram.com/deeevvvvvvv_/');
+                final Uri url = Uri.parse(AppSocialLinks.instagram);
                 await launchUrl(url);
               },
               icons: AppAssets.instagram,
@@ -123,7 +120,7 @@ class ProfileScreen extends StatelessWidget {
             ),
             SettingsItem(
               onTap: () async {
-                final Uri url = Uri.parse('https://github.com/Dev-Adnani');
+                final Uri url = Uri.parse(AppSocialLinks.github);
                 await launchUrl(url);
               },
               themeFlag: themeFlag,
@@ -138,7 +135,7 @@ class ProfileScreen extends StatelessWidget {
               icons: AppAssets.discord,
               themeFlag: themeFlag,
               onTap: () async {
-                final Uri url = Uri.parse('https://discord.gg/XjzZPEafnE');
+                final Uri url = Uri.parse(AppSocialLinks.discord);
                 await launchUrl(url);
               },
               iconStyle: IconStyle(
@@ -159,7 +156,7 @@ class ProfileScreen extends StatelessWidget {
 
                 final Uri emailLaunchUri = Uri(
                   scheme: 'mailto',
-                  path: 'devadnani26@gmail.com',
+                  path: AppSocialLinks.gmail,
                   query: encodeQueryParameters(
                       <String, String>{'subject': 'Hello'}),
                 );
@@ -177,7 +174,8 @@ class ProfileScreen extends StatelessWidget {
               themeFlag: themeFlag,
               onTap: () async {
                 final Uri url = Uri.parse(
-                    'https://open.spotify.com/playlist/5EB17JSwRQr6R4VuW2xXEY?si=oZl51XGNQNC5YMfGKhXpTA&utm_source=copy-link');
+                  AppSocialLinks.spotify,
+                );
                 await launchUrl(url);
               },
               icons: AppAssets.spotify,
